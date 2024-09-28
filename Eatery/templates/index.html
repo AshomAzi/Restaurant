@@ -1,0 +1,115 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static './css/style.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html" class="logo">Logo</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#"><button class="action">Book Now</button></a>
+    </header>
+    <div class="content">
+      <div class="main">
+        <div class="main-content">
+          <h1>Some Really Big Text</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea,
+            aliquam. Eum asperiores quo consequuntur qui voluptas reprehenderit
+            perferendis voluptatum aliquid.
+          </p>
+          <a href="#"><button class="action">Book Now</button></a>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="items">
+          <img src="{% static './images/piotr.jpg' %}" alt="" />
+          <img src="{% static './images/walker.jpg' %}" alt="" />
+          <img src="{% static './images/brenan.jpg' %}" alt="" />
+          <img src="{% static './images/mgg.jpg' %}" alt="" />
+        </div>
+        <a href="#"><button class="action menu-btn">View More</button></a>
+      </div>
+
+      <div class="events">
+        <h2>We Organize!</h2>
+        <div class="event item1">
+          <img src=".{% static '/images/Picnic.png' %}" alt="" />
+          <div class="details">
+            <h3>Picnics</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est,
+              aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolore, iusto.
+            </p>
+          </div>
+        </div>
+        <div class="event item2">
+          <img src=".{% static '/images/Birthdays.png' %}" alt="" />
+          <div class="details">
+            <h3>Picnics</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est,
+              aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolore, iusto.
+            </p>
+          </div>
+        </div>
+        <div class="event item3">
+          <img src=".{% static '/images/Private party.jpg' %}" alt="" />
+          <div class="details">
+            <h3>Picnics</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est,
+              aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolore, iusto.
+            </p>
+          </div>
+        </div>
+        <div class="btn">
+          <a href="#" class="action"><button class="action menu-btn">Book Now</button></a>
+        </div>
+      </div>
+
+      <div class="reserve">
+        <form action="#">
+          <h2>Make a Reservation</h2>
+          <div class="name item">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Full Name" required />
+          </div>
+          <div class="email item">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required/>
+          </div>
+          <div class="date-time item">
+            <label for="date-time">Date:</label>
+            <input type="datetime-local" name="date-time" id="date-time" required/>
+          </div>
+          <div class="message item">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Message" required></textarea>
+          </div>
+          <div class="btn">
+            <a href="#" class="action"><button class="action menu-btn">Reserve</button></a>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <p>&copy; Copyright <span>Ashom Azi</span>. All Rights Reserved</p>
+      </div>
+    </div>
+  </body>
+</html>
